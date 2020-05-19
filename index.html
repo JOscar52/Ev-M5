@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,user-scalable=no">
+  <title>Juego</title>
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/jquery-ui.min.css">
+  <link rel="stylesheet" href="css/estilos.css">
+
+
+</head>
+<body>
+  <div class="main-container">
+  <!--  <h1 class="main-titulo">Match Game</h1>-->
+        <h1 id="cambioColor" class="main-titulo">Match Game</h1>
+        <!--<div class="video">
+          <video autoplay loop class="main-titulos" >
+              <source src="image/1.mp4" type="video/mp4"/>
+          </video>
+
+        </div>-->
+
+            <!--<div class="panel-tablero">-->
+            <div id="pt" id="tablero" class="panel-tablero">
+            <!--  <div class="col-sm-12 cuadro">
+                <img src="image/2.png" id="i1" class="contenido"/>
+                <img src="image/3.png" id="i2" class="contenido"/>
+                <img src="image/4.png" id="i3" class="contenido"/>
+                <img src="image/1.png" id="i4" class="contenido"/>
+                <img src="image/2.png" id="i5" class="contenido"/>
+                <img src="image/1.png" id="i6" class="contenido"/>
+                <img src="image/4.png" id="i7" class="contenido"/>
+
+              </div>-->
+          <!--<div class=" cc">-->
+              <div class="col-1 cuadro">
+                <img src="image/2.png" id="i1" class="contenido"/>
+              </div>
+              <div class="col-2 cuadro">
+                <img src="image/2.png" id="i2" class="contenido"/>
+              </div>
+              <div class="col-3 cuadro">
+                <img src="image/1.png" id="i3" class="contenido"/>
+              </div>
+              <div class="col-4 cuadro">
+                <img src="image/3.png" id="i4" class="contenido"/>
+              </div>
+              <div class="col-5 cuadro">
+                <img src="image/4.png" id="i5" class="contenido"/>
+              </div>
+              <div class="col-6 cuadro">
+                <img src="image/2.png" id="i6" class="contenido"/>
+              </div>
+              <div class="col-7 cuadro">
+                <img src="image/1.png" id="i7" class="contenido"/>
+              </div>
+
+              <div class="col-1 cuadro">
+                <img src="image/2.png" id="i8" class="contenido c8"/>
+              </div>
+              <div class="col-2 cuadro">
+                <img src="image/2.png" id="i9" class="contenido c9"/>
+              </div>
+              <div class="col-3 cuadro">
+                <img src="image/1.png" id="i10" class="contenido c10"/>
+              </div>
+              <div class="col-4 cuadro c11" id="ic11">
+                <img src="image/3.png" id="i11" class="contenido "/>
+              </div>
+              <div class="col-5 cuadro">
+                <img src="image/4.png" id="i12" class="contenido"/>
+              </div>
+              <div class="col-6 cuadro">
+                <img src="image/2.png" id="i13" class="contenido"/>
+              </div>
+              <div class="col-7 cuadro">
+                <img src="image/1.png" id="i14" class="contenido"/>
+              </div>
+
+              <div class="col-1 cuadro">
+                <img src="image/2.png" id="i8" class="contenido"/>
+              </div>
+              <div class="col-2 cuadro">
+                <img src="image/2.png" id="i9" class="contenido"/>
+              </div>
+              <div class="col-3 cuadro">
+                <img src="image/1.png" id="i10" class="contenido"/>
+              </div>
+              <div class="col-4 cuadro">
+                <img src="image/3.png" id="i11" class="contenido"/>
+              </div>
+              <div class="col-5 cuadro">
+                <img src="image/4.png" id="i12" class="contenido"/>
+              </div>
+              <div class="col-6 cuadro">
+                <img src="image/2.png" id="i13" class="contenido"/>
+              </div>
+              <div class="col-7 cuadro">
+                <img src="image/1.png" id="i14" class="contenido"/>
+              </div>
+
+              <div class="col-1 cuadro">
+                <img src="image/2.png" id="i8" class="contenido"/>
+              </div>
+              <div class="col-2 cuadro">
+                <img src="image/2.png" id="i9" class="contenido"/>
+              </div>
+              <div class="col-3 cuadro">
+                <img src="image/1.png" id="i10" class="contenido"/>
+              </div>
+              <div class="col-4 cuadro">
+                <img src="image/3.png" id="i11" class="contenido"/>
+              </div>
+              <div class="col-5 cuadro">
+                <img src="image/4.png" id="i12" class="contenido"/>
+              </div>
+              <div class="col-6 cuadro">
+                <img src="image/2.png" id="i13" class="contenido"/>
+              </div>
+              <div class="col-7 cuadro">
+                <img src="image/1.png" id="i14" class="contenido"/>
+              </div>
+
+              <div class="col-1 cuadro">
+                <img src="image/2.png" id="i8" class="contenido"/>
+              </div>
+              <div class="col-2 cuadro">
+                <img src="image/2.png" id="i9" class="contenido"/>
+              </div>
+              <div class="col-3 cuadro">
+                <img src="image/1.png" id="i10" class="contenido"/>
+              </div>
+              <div class="col-4 cuadro">
+                <img src="image/3.png" id="i11" class="contenido"/>
+              </div>
+              <div class="col-5 cuadro">
+                <img src="image/4.png" id="i12" class="contenido"/>
+              </div>
+              <div class="col-6 cuadro">
+                <img src="image/2.png" id="i13" class="contenido"/>
+              </div>
+              <div class="col-7 cuadro">
+                <img src="image/1.png" id="i14" class="contenido"/>
+              </div>
+
+              <div class="col-1 cuadro">
+                <img src="image/2.png" id="i8" class="contenido"/>
+              </div>
+              <div class="col-2 cuadro">
+                <img src="image/2.png" id="i9" class="contenido"/>
+              </div>
+              <div class="col-3 cuadro">
+                <img src="image/1.png" id="i10" class="contenido"/>
+              </div>
+              <div class="col-4 cuadro">
+                <img src="image/3.png" id="i11" class="contenido"/>
+              </div>
+              <div class="col-5 cuadro">
+                <img src="image/4.png" id="i12" class="contenido"/>
+              </div>
+              <div class="col-6 cuadro">
+                <img src="image/2.png" id="i13" class="contenido"/>
+              </div>
+              <div class="col-7 cuadro">
+                <img src="image/1.png" id="i14" class="contenido"/>
+              </div>
+
+              <div class="col-1 cuadro">
+                <img src="image/2.png" id="i8" class="contenido"/>
+              </div>
+              <div class="col-2 cuadro">
+                <img src="image/2.png" id="i9" class="contenido"/>
+              </div>
+              <div class="col-3 cuadro">
+                <img src="image/1.png" id="i10" class="contenido"/>
+              </div>
+              <div class="col-4 cuadro">
+                <img src="image/3.png" id="i11" class="contenido"/>
+              </div>
+              <div class="col-5 cuadro">
+                <img src="image/4.png" id="i12" class="contenido"/>
+              </div>
+              <div class="col-6 cuadro">
+                <img src="image/2.png" id="i13" class="contenido"/>
+              </div>
+              <div class="col-7 cuadro">
+                <img src="image/1.png" id="i14" class="contenido"/>
+              </div>
+
+<!--              <div id="verImagen" title="Imagen">
+                <img src="" width="100%"/>
+              </div>
+-->
+        <!--</div>-->
+
+            </div>
+
+<!--    <div class="panel-tablero">
+      <div class="col-1">
+
+
+      </div>
+      <div class="col-2">
+
+      </div>
+      <div class="col-3">
+
+      </div>
+      <div class="col-4">
+
+      </div>
+      <div class="col-5">
+
+      </div>
+      <div class="col-6">
+
+      </div>
+      <div class="col-7">
+
+      </div>
+    </div>
+-->
+    <!--<div class="panel-score">-->
+    <div id="ps" class="panel-score">
+      <div class="mouse-posicion" style="color:white;">
+        <div class="chip">
+          X: <span id="posX"></span>
+        </div>
+        <div class="chip">
+          Y: <span id="posY"></span>
+        </div>
+      </div>
+      <div class="score">
+        <h2 class="data-titulo">Puntuación</h2>
+        <span class="data-info" id="score-text">0</span>
+      </div>
+      <div class="moves">
+        <h2 class="data-titulo">Movimientos</h2>
+        <span class="data-info" id="movimientos">0</span>
+      </div>
+      <div class="time">
+        <h2 class="data-titulo">Tiempo</h2>
+
+        <div class="data-info" id="SSegundos">00:00</div>
+      </div>
+
+
+
+      <div class="buttons">
+        <!--<input type="button" onclick="reinicio" name="button"></button>"-->
+        <button class="btn-reinicio" id="camTexto">Iniciar</button>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="js/prototype.js" type="text/javascript"></script>
+  <script src="js/jquery-3.0.0.js" type="text/javascript"></script>
+  <script src="js/jquery-ui.min.js" type="text/javascript"></script>
+  <!--<script src="js/timer-EvD.js" type="text/javascript"></script>-->
+  <script src="js/app.js" type="text/javascript"></script>
+</body>
+</html>
